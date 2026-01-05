@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(57, 57, 57);
+}
+
+main{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(117, 117, 117);
+    border: 3px solid rgb(45, 45, 45);
+    border-radius: 23px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    text-align: center;
+    align-content: center;
+    height: 110px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+nav{
+    background-color: rgb(84, 84, 84);
+    border: 2px solid rgb(84, 84, 84);
+    height: 44px;
+    align-content: center;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    align-items: center;
+    width: fit-content;
+}
+
+nav li{
+    list-style: none;
+    text-align: center;
+}
+
+nav a{
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-radius: 20px;
+    transition: background-color 0.9s ease;
+    transition: border 0.3s ease;
+    transition: border-radius 0.3s ease;
+}
+
+nav a.aktiv{
+    border: 2px solid rgb(255, 200, 0);
+    border-radius: 20px;
+}
+
+nav a:hover{
+    background-color: rgb(255, 200, 0);
+    border: 2px solid rgb(255, 200, 0);
+    border-radius: 10px;
+    color: black;
+}
+
+article{
+    padding: 15px;
+}
+
+.tarolo1{
+    display: grid;
+    grid-template-areas: 
+    "f f"
+    "b j";
+}
+
+.tarolo1 h1{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tarolo1 p{
+    padding-left: 15px;
+    text-align: justify;
+}
+
+.tarolo2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pakli2{
+    padding: 15px;
+    margin: 5px;
+    background-color: rgb(84, 84, 84);
+    border: 3px solid rgb(45, 45, 45);
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 35px 200px 230px;
+}
+
+.pakli2 h3{
+    text-align: center;
+}
+
+.pakli2 p{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.felsopakli{
+    grid-area: f;
+    padding: 15px;
+    margin: 5px;
+    background-color: rgb(84, 84, 84);
+    border: 3px solid rgb(45, 45, 45);
+    border-radius: 20px;
+}
+
+.felsopakli p{
+    padding-right: 15px;
+}
+
+.bemutatkozas{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+img{
+    width: 100%;
+    border: 3px solid rgb(45, 45, 45);
+    border-radius: 20px;
+}
+
+.balpakli{
+    grid-area: b;
+    padding: 15px;
+    margin: 5px;
+    background-color: rgb(84, 84, 84);
+    border: 3px solid rgb(45, 45, 45);
+    border-radius: 20px;
+}
+
+.balpakli ul{
+    padding-left: 30px;
+}
+
+.jobbpakli{
+    grid-area: j;
+    padding: 15px;
+    margin: 5px;
+    background-color: rgb(84, 84, 84);
+    border: 3px solid rgb(45, 45, 45);
+    border-radius: 20px;
+}
+
+.tarolo2 a{
+    display: block;
+    text-align: center;
+    align-content: center;
+    height: 40px;
+    background-color: rgb(84, 84, 84);
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: background-color 0.9s ease;
+    transition: border 0.3s ease;
+    transition: border-radius 0.3s ease;
+}
+
+.tarolo2 img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.tarolo2 a:hover{
+    background-color: rgb(255, 200, 0);
+    border: 2px solid rgb(255, 200, 0);
+    border-radius: 10px;
+    color: black;
+}
+
+footer{
+    text-align: center;
+    height: 40px;
+    padding: 10px;
+    background-color: rgb(84, 84, 84);
+    border: 2px solid rgb(84, 84, 84);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 930px){
+    .tarolo2{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bemutatkozas{
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media screen and (max-width: 635px){
+    nav{
+        height: auto;
+    }
+    
+    nav ul{
+        grid-template-columns: 1fr;
+    }
+
+    nav li{
+        padding: 11px;
+    }
+
+    .tarolo1{
+        grid-template-areas: 
+        "f"
+        "b"
+        "j";
+    }
+
+    .bemutatkozas{
+        grid-template-columns: 1fr;
+    }
+    
+    .bemutatkozas p{
+        margin-bottom: 10px;
+    }
+
+    .tarolo2{
+        grid-template-columns: 1fr;
+    }
+}
