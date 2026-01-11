@@ -64,13 +64,13 @@ nav a{
 }
 
 nav a.aktiv{
-    border: 2px solid rgb(255, 200, 0);
+    border: 2px solid goldenrod;
     border-radius: 20px;
 }
 
 nav a:hover{
-    background-color: rgb(255, 200, 0);
-    border: 2px solid rgb(255, 200, 0);
+    background-color: goldenrod;
+    border: 2px solid goldenrod;
     border-radius: 10px;
     color: black;
 }
@@ -108,7 +108,7 @@ article{
     border: 3px solid rgb(45, 45, 45);
     border-radius: 20px;
     display: grid;
-    grid-template-rows: 35px 200px 230px;
+    grid-template-rows: 35px 200px 250px;
 }
 
 .pakli2 h3{
@@ -117,7 +117,7 @@ article{
 
 .pakli2 p{
     text-align: justify;
-    margin-top: 10px;
+    padding: 15px;
 }
 
 .felsopakli{
@@ -130,7 +130,7 @@ article{
 }
 
 .felsopakli p{
-    padding-right: 15px;
+    padding: 15px;
 }
 
 .bemutatkozas{
@@ -190,8 +190,8 @@ img{
 }
 
 .tarolo2 a:hover{
-    background-color: rgb(255, 200, 0);
-    border: 2px solid rgb(255, 200, 0);
+    background-color: goldenrod;
+    border: 2px solid goldenrod;
     border-radius: 10px;
     color: black;
 }
@@ -247,5 +247,11 @@ footer{
 
     .tarolo2{
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 400px){
+    header{
+        font-size: 24px;
     }
 }
